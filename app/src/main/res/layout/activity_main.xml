@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="#fff"
+                                                 android:fitsSystemWindows="false"
+                                                 tools:context="com.wubademo.MainActivity">
+
+    <View
+        android:id="@+id/dependency"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginTop="-230dp"
+        android:background="#c0c0c0"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-40dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="top|center"
+        android:alpha="0"/>
+    
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/search_collapsed_right_margin"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:alpha="0.3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="  广州 "
+            android:textSize="17sp"
+            android:textColor="#90000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=" 找工作 找房子 找服务 "
+            android:textSize="15sp"
+            android:textColor="#90000000"/>
+    </LinearLayout>
+
+    <com.wubademo.customview.MyRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layoutManager="LinearLayoutManager"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:alpha="0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 "
+            android:textSize="26sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="空气优：37"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="睛"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="签到"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right|top"/>
+    
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/icon_maxtop_margin"
+        android:layout_marginLeft="@dimen/icon_minleft_margin"
+        android:src="@mipmap/icon"/>
+    
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="一分耕耘，一分收获"
+        android:textColor="#ffffff"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="60dp"
+        android:alpha="0"
+        />
+</android.support.design.widget.CoordinatorLayout>

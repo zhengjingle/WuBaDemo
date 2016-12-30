@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dependency_collapsed">0dp</dimen>
+    <dimen name="dependency_expanded">60dp</dimen>
+    <dimen name="dependency_refresh">150dp</dimen>
+    <dimen name="dependency_max_refresh">230dp</dimen>
+
+    <dimen name="icon_minleft_margin">-30dp</dimen>
+    <dimen name="icon_mintop_margin">16dp</dimen>
+    <dimen name="icon_maxtop_margin">80dp</dimen>
+
+    <dimen name="search_collapsed_right_margin">60dp</dimen>
+    <dimen name="search_expanded_right_margin">20dp</dimen>
+</resources>
